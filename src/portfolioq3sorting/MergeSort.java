@@ -45,7 +45,7 @@ public class MergeSort {
     }
     public void mergeSort(ArrayList<Integer> mlist, int l, int r) {
         if (l < r) {
-            int m = l + (r - 1)/2;
+            int m = l + (r - l)/2;
             
             mergeSort(mlist, l, m);
             mergeSort(mlist, m + 1, r);
